@@ -1,0 +1,23 @@
+KOPIE by Dietmar SCHRAUSSER 2oo8
+
+Allgemein
+---------
+DOS Anwendung KOPIE.EXE kopiert eine Datei und führt ggf. Veränderungen an einzelnen Zeichen durch (noch als switches zu implementieren). Mittels verschobener Zeichenausgabe oder explizit angegebenem Zeichenaustausch.
+
+Arbeitsweise
+------------
+1# Übernahme einer Datei. 
+
+2# Ausgabe einer (ggf modifizierten) Dateikopie.
+
+Handhabung
+----------
+KOPIE [input] [output] ([switch]) 
+[input] ... Eingabe Datei 
+[output] .. Ausgabe Datei 
+([switch] .. zu implementieren)
+
+bsp: 	KOPIE DTREN.BAT DTRENA.BAT ()
+
+
+ps. zu verwenden bei password lock projekt

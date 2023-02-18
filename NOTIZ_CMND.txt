@@ -1,0 +1,8 @@
+CMND by Dietmar SCHRAUSSER 2009
+
+-----------------
+Usage: CMND [cmd]
+ [cmd]... Command
+-----------------
+CMND by Dietmar Schrausser
+compiled on May  3 2009 @ 01:33:24

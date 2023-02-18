@@ -1,0 +1,19 @@
+SRC by Dietmar SCHRAUSSER 2010
+
+Allgemein
+---------
+SRC.EXE schreibt das Kommandozeilenargument in eine ASCII Datei.
+  
+Handhabung
+----------
+SRC [output] [typ] [arg] [sw]
+[output] ... Ausgabe Datei
+[typ] ...... (0):anhaengen (1):neu erstellen
+[arg] ...... Argument
+[sw] ........(0):Zeilenumbruch (1):Leerzeichen (2):kein Zeichen
+
+bsp: SRC out.bat 1 lsn 1
+     SRC out.bat 0 nul.txt 0
+     
+     
+     

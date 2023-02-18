@@ -1,0 +1,22 @@
+DLS by Dietmar SCHRAUSSER 2010
+
+Allgemein
+---------
+DLS.EXE schreibt eine Datei zur Konsole.
+  
+Handhabung
+----------
+DLS [input] [ [i]m1]m2] ]
+[input] ... Eingabe Datei
+optional:
+[i] ....... (1):Zeigt Dateiname, n, k ggf. m1, m2 sowie i, j 
+            (0):Zeigt keine zusaetzliche Information
+[m1] ...... Start Zeile der Textausgabe
+[m2] ...... End Zeile der Textausgabe
+
+bsp: DLS NOTIZ_DLS.txt
+     DLS NOTIZ_DLS.txt 1
+     DLS NOTIZ_DLS.txt 1 1
+     DLS NOTIZ_DLS.txt 0 3 10
+     DLS NOTIZ_DLS.txt 1 10 10
+

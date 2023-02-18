@@ -1,0 +1,14 @@
+FIL by Dietmar SCHRAUSSER 2010
+
+Allgemein
+---------
+FIL.EXE schreibt eine Liste aller spezifizierten Dateien des aktuellen Verzeichnisses in eine ASCII Datei.
+  
+Handhabung
+----------
+FIL [output] [*] 
+[output] .. Ausgabe Datei 
+[*] ...... Dateispezifikation
+
+bsp: FIL dir.txt *.*
+     

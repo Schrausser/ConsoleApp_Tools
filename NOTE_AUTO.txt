@@ -1,0 +1,29 @@
+AUTO by Dietmar SCHRAUSSER 2010
+
+Program
+-------
+AUTO.EXE generates a C-Source File and Directory Structure.
+
+Method
+------
+# Declaration of C-Project Parmeters (Name, Filestreams, Loops),
+# Autogeneration of 1 C-Source Framework-File NAME.c as specified,
+# Autogeneration of 1 ASCII Framework-File NOTE_NAME.txt,
+# Named Directory Structure autogeneration:
+
+D:\_EIGENEDATEIEN_\1_LAUFENDES\1_SYSTEM\3_C_PROGRAMME\
+							_NAME_\NAME.c
+							_NAME_\debug\NOTE_NAME.txt
+								     DOSCOM.exe
+Usage
+-----
+AUTO [name] [in] [out] [nl] [L]
+[name] .... C Projekt Name 
+[input] ... ASCII Input Filename
+[output] .. ASCII Output Filename
+[nl] ...... Number of Loop-Shells to implement
+[L] ....... Language of Comments and Text
+
+example: AUTO TEST 0 0 0 0
+	 AUTO PRO1 input.txt output.txt 3 1
+	 AUTO PRO2 0 output.txt 1 0

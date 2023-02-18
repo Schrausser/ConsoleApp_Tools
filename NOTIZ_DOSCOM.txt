@@ -1,0 +1,14 @@
+DOSCOM by Dietmar SCHRAUSSER 2oo8
+
+Allgemein
+---------
+Startet eine DOS-Shell im aktuellen Verzeichnis.
+Kopiert sich selbst in das mit dem Desktop verknüfte Verzeichis [_DOSCOM]
+Umbenennung in "nil" nach Gebrauch im aktuellen Verzeichis.
+
+Handhabung
+----------
+Aus der Desktopverknüpfung [_DOSCOM] in ein beliebiges Verzeichnis ziehen, 
+dort ausführen und nach Gebrauch löschen.
+
+

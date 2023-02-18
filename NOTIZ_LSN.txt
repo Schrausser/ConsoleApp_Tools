@@ -1,0 +1,18 @@
+LSN by Dietmar SCHRAUSSER 2009
+
+Allgemein
+---------
+LSN.EXE löscht eine Datei. 
+
+Arbeitsweise
+------------
+# Übernahme eines Dateinamens einer zu löschenden Datei.  
+
+Handhabung
+----------
+LSN [datei] 
+[datei] ... Dateiname 
+
+bsp: 	LSN oo
+
+

@@ -1,0 +1,9 @@
+FINDE by Dietmar SCHRAUSSER 2008
+
+---------------------------------------------------------
+Usage: FINDE [datei]
+ [datei] ... zu findende Datei (Konventionen siehe FINDSTR)
+---------------------------------------------------------
+FINDE by Dietmar Schrausser
+compiled on Mar  1 2008 @ 23:30:33
+     
