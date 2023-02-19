@@ -98,3 +98,18 @@ Bsp.:
 
      SRC out.bat 1 lsn 1
      SRC out.bat 0 nul.txt 0
+
+## T
+
+Fügt die Kommandozeilenargumente in die ASCII Datei 'T.txt' ein. 
+Die Argumente werden in der Datei durch ein Leerzeichen getrennt.
+  
+Handhabung:
+
+     T [argi] ... [argn]
+     [argi] ... String
+
+Bsp.:
+
+     T Das ist ein sehr einfaches Programm
+     T zur schnellen Texteingabe in eine Datei.
