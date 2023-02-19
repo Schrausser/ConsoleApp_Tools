@@ -155,7 +155,7 @@ bsp:
 
 Führt Consolenbefehle mit Argumenten aus.
 
-Usage: 
+Handhabung: 
 
      CMND [cmd]
      [cmd]... Command
