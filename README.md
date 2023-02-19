@@ -147,7 +147,7 @@ Handhabung:
      LSN [datei] 
      [datei] ... Dateiname 
 
-Bsp:
+Bsp.:
 
      LSN oo
 
