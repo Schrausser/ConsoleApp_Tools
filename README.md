@@ -151,7 +151,7 @@ bsp:
 
      LSN oo
 
-## CMND, CMNFw
+## CMND, CMNDw
 
 Führt Consolenbefehle mit Argumenten aus.
 
