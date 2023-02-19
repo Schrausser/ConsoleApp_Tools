@@ -113,3 +113,14 @@ Bsp.:
 
      T Das ist ein sehr einfaches Programm
      T zur schnellen Texteingabe in eine Datei.
+
+## DOSCOM
+
+Startet eine DOS-Shell im aktuellen Verzeichnis.
+Kopiert sich selbst in das mit dem Desktop verknüfte Verzeichis [_DOSCOM]
+Umbenennung in "nil" nach Gebrauch im aktuellen Verzeichis.
+
+Handhabung:
+
+Aus der Desktopverknüpfung [_DOSCOM] in ein beliebiges Verzeichnis ziehen, 
+dort ausführen und nach Gebrauch löschen.
