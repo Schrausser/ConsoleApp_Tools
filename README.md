@@ -50,3 +50,51 @@ Bsp.:
      DLS NOTIZ_DLS.txt 1 1
      DLS NOTIZ_DLS.txt 0 3 10
      DLS NOTIZ_DLS.txt 1 10 10
+
+## FIL
+
+Schreibt eine Liste aller spezifizierten Dateien des aktuellen Verzeichnisses in eine ASCII Datei.
+  
+Handhabung:
+
+     FIL [output] [*] 
+     [output] .. Ausgabe Datei 
+     [*] ....... Dateispezifikation
+
+Bsp.:
+
+     FIL dir.txt *.*
+
+## KOPIE
+
+Kopiert eine Datei.
+
+- Übernahme einer Datei. 
+- Ausgabe einer (ggf. modifizierten) Dateikopie.
+
+Handhabung:
+
+     KOPIE [input] [output] ([switch]) 
+     [input] ... Eingabe Datei 
+     [output] .. Ausgabe Datei 
+
+Bsp.: 	
+
+     KOPIE DTREN.BAT DTRENA.BAT 
+     
+## SRC
+
+Schreibt das Kommandozeilenargument in eine ASCII Datei.
+  
+Handhabung:
+
+     SRC [output] [typ] [arg] [sw]
+     [output] ... Ausgabe Datei
+     [typ] ...... (0):anhaengen (1):neu erstellen
+     [arg] ...... Argument
+     [sw] ........(0):Zeilenumbruch (1):Leerzeichen (2):kein Zeichen
+
+Bsp.: 
+
+     SRC out.bat 1 lsn 1
+     SRC out.bat 0 nul.txt 0
