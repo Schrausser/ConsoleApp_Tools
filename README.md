@@ -124,3 +124,43 @@ Handhabung:
 
 Aus der Desktopverknüpfung [_DOSCOM] in ein beliebiges Verzeichnis ziehen, 
 dort ausführen und nach Gebrauch löschen.
+
+## FINDE
+
+Dateien suchen und finden.
+
+Handhabung: 
+    
+     FINDE [datei]
+     [datei] ... zu findende Datei
+
+## LSN
+
+Löscht eine Datei. 
+
+Arbeitsweise:
+
+- Übernahme eines Dateinamens einer zu löschenden Datei.  
+
+Handhabung:
+
+     LSN [datei] 
+     [datei] ... Dateiname 
+
+bsp:
+
+     LSN oo
+
+## CMND, CMNFw
+
+Führt Consolenbefehle mit Argumenten aus.
+
+Usage: 
+
+     CMND [cmd]
+     [cmd]... Command
+
+     CMNDw [cmd] [argc]
+     [cmd].......... Command
+     [argc].. n of Arguments
+
