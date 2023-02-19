@@ -117,7 +117,7 @@ Bsp.:
 ## DOSCOM
 
 Startet eine DOS-Shell im aktuellen Verzeichnis.
-Kopiert sich selbst in das mit dem Desktop verknüfte Verzeichis [_DOSCOM]
+Kopiert sich selbst in das mit dem Desktop verknüfte Verzeichis [_DOSCOM].
 Umbenennung in "nil" nach Gebrauch im aktuellen Verzeichis.
 
 Handhabung:
@@ -147,7 +147,7 @@ Handhabung:
      LSN [datei] 
      [datei] ... Dateiname 
 
-bsp:
+Bsp:
 
      LSN oo
 
