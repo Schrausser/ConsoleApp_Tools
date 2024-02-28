@@ -5,9 +5,9 @@
 #include <time.h>
 
 void _err_msg (); //-------------------------------------------------------> prozedur fehlermeldung und usage instruktion   
-void _head(); //-----------------------------------------------------------> prozedur für kopfzeilen                        
+void _head(); //-----------------------------------------------------------> prozedur fÃ¼r kopfzeilen                        
 
-main(int argc, char *argv[]) //--------------------------------------------> main übernimmt n argumente im vektor argv      
+main(int argc, char *argv[]) //--------------------------------------------> main Ã¼bernimmt n argumente im vektor argv      
 {   
 	FILE *outstream; //----------------------------------------------------> streams                                        
       
