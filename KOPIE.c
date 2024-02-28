@@ -6,13 +6,13 @@
 #include <time.h>
 
 void _err_msg (); //---------------------------------------------------------> prozedur fehlermeldung und usage instruktion   
-void _head(); //---------------------------------------------------------> prozedur für kopfzeilen                       
+void _head(); //---------------------------------------------------------> prozedur fÃ¼r kopfzeilen                       
 
 char c_1, c_2 ;
 
 int index = 1;
 
-main(int argc, char *argv[]) //----------------------------------------------> main übernimmt n argumente im vektor argv      
+main(int argc, char *argv[]) //----------------------------------------------> main Ã¼bernimmt n argumente im vektor argv      
 {   
 	FILE *inStream, *outStream; //---------------------------------------> streams                                        
       
@@ -22,7 +22,7 @@ main(int argc, char *argv[]) //----------------------------------------------> m
    		_err_msg(argv[0]);
 	}
    
-	//-------------------------------------------------------------------| def von input und outputdatei (binärmodus):                 
+	//-------------------------------------------------------------------| def von input und outputdatei (binÃ¤rmodus):                 
 	inStream = fopen( argv[1], "rb" );
 	outStream = fopen( argv[2], "wb" );                                                                                  
    
@@ -42,7 +42,7 @@ main(int argc, char *argv[]) //----------------------------------------------> m
 
 		/*if (c_1 == '\n') c_1 = '\\'; /*----------------------------------> bsp: ersetzt absatz durch \ */
 
-		if (index > 1) fputc (c_2, outStream); //------------------------> um 1 zeichen versetzte ausgabe in outstream (löscht anhängsel am ende der datei)
+		if (index > 1) fputc (c_2, outStream); //------------------------> um 1 zeichen versetzte ausgabe in outstream (lÃ¶scht anhÃ¤ngsel am ende der datei)
 
 
 		c_2 = c_1;
