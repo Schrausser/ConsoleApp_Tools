@@ -6,8 +6,8 @@ Console tool applications.
 Creates a c-source file and directory structure.
 
 - Declaration of c-project parmeters (name, filestreams, loops).
-- Creation of 1 c-source framework-file NAME.c as specified.
-- Creation of 1 ASCII framework-file NOTE_NAME.txt.
+- Creation of 1 c-source framework-file `NAME.c` as specified.
+- Creation of 1 ASCII framework-file `NOTE_NAME.txt`.
 
 Directory structure:
 
@@ -101,7 +101,7 @@ Bsp.:
 
 ## T
 
-Fügt die Kommandozeilenargumente in die ASCII Datei 'T.txt' ein. 
+Fügt die Kommandozeilenargumente in die ASCII Datei `T.txt` ein. 
 Die Argumente werden in der Datei durch ein Leerzeichen getrennt.
   
 Handhabung:
