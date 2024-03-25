@@ -118,7 +118,7 @@ Bsp.:
 
 Startet eine DOS-Shell im aktuellen Verzeichnis.
 Kopiert sich selbst in das mit dem Desktop verknüfte Verzeichis [_DOSCOM].
-Umbenennung in "nil" nach Gebrauch im aktuellen Verzeichis.
+Umbenennung in *nil* nach Gebrauch im aktuellen Verzeichis.
 
 Handhabung:
 
