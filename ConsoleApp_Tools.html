@@ -1,0 +1,165 @@
+<html> 
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="Author" content="Dietmar Gerald Schrausser">
+
+<title>
+ConsoleApp_Tools/README
+</title>
+
+</head> 
+<body style="font-family:calibri;font-size:85%;background-color:#eceff1;color:#37474f">
+
+<style>
+a {color: #78909c; }
+a:visited {color: #78909c;}
+</style>
+<h1 id="consoleapp_tools">ConsoleApp_Tools</h1>
+<p>Console tool applications.</p>
+<h2 id="auto">AUTO</h2>
+<p>Creates a c-source file and directory structure.</p>
+<ul>
+<li>Declaration of c-project parmeters (name, filestreams, loops).</li>
+<li>Creation of 1 c-source framework-file NAME.c as specified.</li>
+<li>Creation of 1 ASCII framework-file NOTE_NAME.txt.</li>
+</ul>
+<p>Directory structure:</p>
+<pre><code>  _NAME_\NAME.c
+  _NAME_\debug\NOTE_NAME.txt	  
+               DOSCOM.exe
+</code></pre>
+<p>Usage:</p>
+<pre><code> AUTO [name] [in] [out] [nl] [L]
+ [name] .... C Projekt Name 
+ [input] ... ASCII Input Filename
+ [output] .. ASCII Output Filename
+ [nl] ...... Number of Loop-Shells to implement
+ [L] ....... Language of Comments and Text
+</code></pre>
+<p>Example:</p>
+<pre><code> AUTO TEST 0 0 0 0
+ AUTO PRO1 input.txt output.txt 3 1
+ AUTO PRO2 0 output.txt 1 0
+</code></pre>
+<h2 id="dls">DLS</h2>
+<p>Schreibt eine Datei zur Konsole.</p>
+<p>Handhabung:</p>
+<pre><code> DLS [input] [ [i]m1]m2] ]
+ [input] ... Eingabe Datei
+ optional:
+ [i] ....... (1):Zeigt Dateiname, n, k ggf. m1, m2 sowie i, j 
+             (0):Zeigt keine zusaetzliche Information
+ [m1] ...... Start Zeile der Textausgabe
+ [m2] ...... End Zeile der Textausgabe
+</code></pre>
+<p>Bsp.:</p>
+<pre><code> DLS NOTIZ_DLS.txt
+ DLS NOTIZ_DLS.txt 1
+ DLS NOTIZ_DLS.txt 1 1
+ DLS NOTIZ_DLS.txt 0 3 10
+ DLS NOTIZ_DLS.txt 1 10 10
+</code></pre>
+<h2 id="fil">FIL</h2>
+<p>Schreibt eine Liste aller spezifizierten Dateien des aktuellen Verzeichnisses in eine ASCII Datei.</p>
+<p>Handhabung:</p>
+<pre><code> FIL [output] [*] 
+ [output] .. Ausgabe Datei 
+ [*] ....... Dateispezifikation
+</code></pre>
+<p>Bsp.:</p>
+<pre><code> FIL dir.txt *.*
+</code></pre>
+<h2 id="kopie">KOPIE</h2>
+<p>Kopiert eine Datei.</p>
+<ul>
+<li>Übernahme einer Datei.</li>
+<li>Ausgabe einer (ggf. modifizierten) Dateikopie.</li>
+</ul>
+<p>Handhabung:</p>
+<pre><code> KOPIE [input] [output] ([switch]) 
+ [input] ... Eingabe Datei 
+ [output] .. Ausgabe Datei 
+</code></pre>
+<p>Bsp.:</p>
+<pre><code> KOPIE DTREN.BAT DTRENA.BAT 
+</code></pre>
+<h2 id="src">SRC</h2>
+<p>Schreibt das Kommandozeilenargument in eine ASCII Datei.</p>
+<p>Handhabung:</p>
+<pre><code> SRC [output] [typ] [arg] [sw]
+ [output] ... Ausgabe Datei
+ [typ] ...... (0):anhaengen (1):neu erstellen
+ [arg] ...... Argument
+ [sw] ........(0):Zeilenumbruch (1):Leerzeichen (2):kein Zeichen
+</code></pre>
+<p>Bsp.:</p>
+<pre><code> SRC out.bat 1 lsn 1
+ SRC out.bat 0 nul.txt 0
+</code></pre>
+<h2 id="t">T</h2>
+<p>Fügt die Kommandozeilenargumente in die ASCII Datei 'T.txt' ein.
+Die Argumente werden in der Datei durch ein Leerzeichen getrennt.</p>
+<p>Handhabung:</p>
+<pre><code> T [argi] ... [argn]
+ [argi] ... String
+</code></pre>
+<p>Bsp.:</p>
+<pre><code> T Das ist ein sehr einfaches Programm
+ T zur schnellen Texteingabe in eine Datei.
+</code></pre>
+<h2 id="doscom">DOSCOM</h2>
+<p>Startet eine DOS-Shell im aktuellen Verzeichnis.
+Kopiert sich selbst in das mit dem Desktop verknüfte Verzeichis [_DOSCOM].
+Umbenennung in &quot;nil&quot; nach Gebrauch im aktuellen Verzeichis.</p>
+<p>Handhabung:</p>
+<p>Aus der Desktopverknüpfung [_DOSCOM] in ein beliebiges Verzeichnis ziehen,
+dort ausführen und nach Gebrauch löschen.</p>
+<h2 id="finde">FINDE</h2>
+<p>Dateien suchen und finden.</p>
+<p>Handhabung:</p>
+<pre><code> FINDE [datei]
+ [datei] ... zu findende Datei
+</code></pre>
+<h2 id="lsn">LSN</h2>
+<p>Löscht eine Datei.</p>
+<p>Arbeitsweise:</p>
+<ul>
+<li>Übernahme eines Dateinamens einer zu löschenden Datei.</li>
+</ul>
+<p>Handhabung:</p>
+<pre><code> LSN [datei] 
+ [datei] ... Dateiname 
+</code></pre>
+<p>Bsp.:</p>
+<pre><code> LSN oo
+</code></pre>
+<h2 id="cmnd-cmndw">CMND, CMNDw</h2>
+<p>Führt Consolenbefehle mit Argumenten aus.</p>
+<p>Handhabung:</p>
+<pre><code> CMND [cmd]
+ [cmd]... Command
+
+ CMNDw [cmd] [argc]
+ [cmd].......... Command
+ [argc].. n of Arguments
+</code></pre>
+
+<hr WIDTH="75%">
+<blockquote ALIGN="CENTER">
+<center>
+<a href="https://github.com/Schrausser/ConsoleApp_Tools">
+ConsoleApp_Tools
+</a>
+<br><font color="#999999"><font size=-1>
+<a
+href="https://orcid.org/0000-0002-4924-8280">
+Dietmar Gerald Schrausser
+</a>
+<p>24.07.2025</p>
+</font></font>
+</center>
+</blockquote>	
+
+</body>
+</html>
