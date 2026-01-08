@@ -17,11 +17,11 @@ Directory structure:
 Usage:
 
      AUTO [name] [in] [out] [nl] [L]
-     [name] .... C Projekt Name 
-     [input] ... ASCII Input Filename
-     [output] .. ASCII Output Filename
-     [nl] ...... Number of Loop-Shells to implement
-     [L] ....... Language of Comments and Text
+      [name] .... C Projekt Name 
+      [input] ... ASCII Input Filename
+      [output] .. ASCII Output Filename
+      [nl] ...... Number of Loop-Shells to implement
+      [L] ....... Language of Comments and Text
 
 Example: 
 
@@ -35,13 +35,13 @@ Schreibt eine Datei zur Konsole.
   
 Handhabung:
 
-     DLS [input] [ [i]m1]m2] ]
-     [input] ... Eingabe Datei
-     optional:
-     [i] ....... (1):Zeigt Dateiname, n, k ggf. m1, m2 sowie i, j 
-                 (0):Zeigt keine zusaetzliche Information
-     [m1] ...... Start Zeile der Textausgabe
-     [m2] ...... End Zeile der Textausgabe
+     DLS [input] [ [i][m1][m2] ]
+      [input] ... Eingabe Datei
+      optional:
+      [i] ....... (1):Zeigt Dateiname, n, k ggf. m1, m2 sowie i, j 
+                  (0):Zeigt keine zusaetzliche Information
+      [m1] ...... Start Zeile der Textausgabe
+      [m2] ...... End Zeile der Textausgabe
 
 Bsp.: 
 
@@ -58,8 +58,8 @@ Schreibt eine Liste aller spezifizierten Dateien des aktuellen Verzeichnisses in
 Handhabung:
 
      FIL [output] [*] 
-     [output] .. Ausgabe Datei 
-     [*] ....... Dateispezifikation
+      [output] .. Ausgabe Datei 
+      [*] ....... Dateispezifikation
 
 Bsp.:
 
@@ -75,8 +75,8 @@ Kopiert eine Datei.
 Handhabung:
 
      KOPIE [input] [output] ([switch]) 
-     [input] ... Eingabe Datei 
-     [output] .. Ausgabe Datei 
+      [input] ... Eingabe Datei 
+      [output] .. Ausgabe Datei 
 
 Bsp.: 	
 
@@ -89,10 +89,10 @@ Schreibt das Kommandozeilenargument in eine ASCII Datei.
 Handhabung:
 
      SRC [output] [typ] [arg] [sw]
-     [output] ... Ausgabe Datei
-     [typ] ...... (0):anhaengen (1):neu erstellen
-     [arg] ...... Argument
-     [sw] ........(0):Zeilenumbruch (1):Leerzeichen (2):kein Zeichen
+      [output] ... Ausgabe Datei
+      [typ] ...... (0):anhaengen (1):neu erstellen
+      [arg] ...... Argument
+      [sw] ........(0):Zeilenumbruch (1):Leerzeichen (2):kein Zeichen
 
 Bsp.: 
 
@@ -107,7 +107,7 @@ Die Argumente werden in der Datei durch ein Leerzeichen getrennt.
 Handhabung:
 
      T [argi] ... [argn]
-     [argi] ... String
+      [argi] ... String
 
 Bsp.:
 
@@ -132,7 +132,7 @@ Dateien suchen und finden.
 Handhabung: 
     
      FINDE [datei]
-     [datei] ... zu findende Datei
+      [datei] ... zu findende Datei
 
 ## LSN
 
@@ -145,7 +145,7 @@ Arbeitsweise:
 Handhabung:
 
      LSN [datei] 
-     [datei] ... Dateiname 
+      [datei] ... Dateiname 
 
 Bsp.:
 
@@ -158,9 +158,9 @@ Führt Consolenbefehle mit Argumenten aus.
 Handhabung: 
 
      CMND [cmd]
-     [cmd]... Command
+      [cmd]... Command
 
      CMNDw [cmd] [argc]
-     [cmd].......... Command
-     [argc].. n of Arguments
+      [cmd].......... Command
+      [argc].. n of Arguments
 
